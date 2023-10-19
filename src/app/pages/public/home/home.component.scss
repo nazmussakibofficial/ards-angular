@@ -1,0 +1,41 @@
+.animate-text-1 {
+    animation: slide-left 1.5s;
+}
+
+.animate-text-2 {
+    animation: slide-left 2s;
+}
+
+.animate-text-3 {
+    animation: slide-left 2.5s;
+}
+
+.animate-image {
+    animation: slide-left-image 2s;
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0%;
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        opacity: 100%;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slide-left-image {
+    from {
+        opacity: 0%;
+        margin-left: 100%;
+    }
+
+    to {
+        opacity: 100%;
+        margin-left: 0%;
+    }
+}

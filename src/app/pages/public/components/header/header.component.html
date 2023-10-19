@@ -1,0 +1,46 @@
+<nav class="w-full sticky top-0 z-50 bg-white pt-4">
+    <div class="flex justify-between">
+        <div class="flex space-x-7">
+            <div>
+                <!-- Website Logo -->
+                <a href="#" class="flex items-center py-4 px-2">
+                    <img src="../../../../../assets/icons/bangladesh-customs-logo 1.png" alt="Logo" class="h-8 w-8 mr-2">
+                    <span class="font-semibold text-[#15245E] text-lg">ARDS</span>
+                </a>
+            </div>
+        </div>
+        <!-- Secondary Navbar items -->
+        <div class="hidden lg:flex items-center space-x-6">
+            <a routerLink="/" class="link-underline link-underline-orange py-2 px-4 text-[#41596B] hover:text-[#F79725] transition duration-300">হোম</a>
+            <a routerLink="/" class="link-underline link-underline-orange py-2 px-4 text-[#41596B] hover:text-[#F79725] transition duration-300">রুলিং ডাটাবেজ</a>
+            <a routerLink="/" class="link-underline link-underline-orange py-2 px-4 text-[#41596B] hover:text-[#F79725] transition duration-300">নির্দেশিকা</a>
+            <a routerLink="/" class="link-underline link-underline-orange py-2 px-4 text-[#41596B] hover:text-[#F79725] transition duration-300">লগ ইন</a>
+            <a routerLink="/" class="py-2 px-4  text-[#41596B] hover:text-white border border-[#F79725] hover:bg-[#F79725] rounded-full transition duration-300">রেজিস্ট্রেশন</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="lg:hidden flex items-center">
+            <button class="outline-none" (click)="toogleMobileMenu()">
+                <svg class=" w-6 h-6 text-[#41596B] hover:text-[#F79725] " x-show="!showMenu" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div #mobilemenu class="hidden mobile-menu">
+        <ul class="text-center">
+            <li><a routerLink="/" [routerLinkActive]="['bg-[#F79725]', 'text-white']"
+                class="block px-2 py-4 transition duration-300">হোম</a></li>
+            <li><a [routerLinkActive]="['bg-[#F79725]', 'text-white']"
+                class="block px-2 py-4 transition duration-300">রুলিং ডাটাবেজ</a></li>
+            <li><a [routerLinkActive]="['bg-[#F79725]', 'text-white']"
+                class="block px-2 py-4 transition duration-300">নির্দেশিকা</a></li>
+            <li><a [routerLinkActive]="['bg-[#F79725]', 'text-white']"
+                class="block px-2 py-4 transition duration-300">লগ ইন</a></li>
+            <li><a [routerLinkActive]="['bg-[#F79725]', 'text-white']"
+                class="block px-2 py-4 transition duration-300">রেজিস্ট্রেশন</a></li>
+        </ul>
+    </div>
+</nav>
